@@ -1,0 +1,265 @@
+@media screen and (min-width: 1200px) {
+    header {
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container{
+        max-width: 1140px;
+    }
+
+    section.gallery{
+        .gallery-images{
+            height: 1000px;
+        }
+    }
+}
+    
+    
+@media screen and (max-width: 1200px) {
+
+    .container{
+        max-width: 960px;
+    }
+    nav{
+        .container{
+            ul{
+                flex-direction: column;
+                transform: translateX(100%);
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 350px;
+                height: 100%;
+                background-color: var(--white-color);
+                z-index: 999;
+                border-left: 2px solid #f1f1f1;
+                transition: transform 400ms;
+
+                .close-icon{
+                    display: block;
+                    padding: 10px 15px 5px;
+                }
+
+                li{
+                    a{
+                        width: 100%;
+                        padding: 15px 10px;
+                    }
+                }
+            }
+
+            .mode{
+                margin-left: auto;
+                margin-right: 20px;
+            }
+
+            .menu-icon{
+                font-size: 1.5625rem;
+                display: block;
+            }
+        }
+    }
+
+    section.gallery{
+        .gallery-images{
+            height: 845px;
+        }
+    }
+
+    footer{
+        .container{
+            .about, .get-in-touch{
+                width: calc(calc(100% - var(--midgap)) / 2);
+                order: 1;
+            }
+
+            .sub{
+                width: 100%;
+                order: 2;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+
+    header{
+        width: 100%;
+        .container{
+            flex-direction: column-reverse;
+            gap: 50px;
+
+            .header-content{
+                width: 100%;
+                align-items: center;
+                text-align: center;
+
+            .header-buttons{
+                justify-content: center;
+
+                .booking-btn{
+                    border-radius: 100vh;
+                }
+            }
+            }
+
+            .header-image{
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    section.chefs{
+        .container{
+            .all-cards{
+                .chef-card{
+                    width: calc((100% - 1*var(--gap)) / 2);
+                }
+            }
+        }
+    }
+
+    section.gallery{
+        .gallery-images{
+            height: 1405px;
+            
+            .picture{
+                width: calc((100% - var(--midgap)) / 2);
+            }
+
+            .pizza{
+                order: 1;
+            }
+
+            .burger{
+                order: 2;
+            }
+
+            .pizza-slices{
+                order: 3;
+            }
+
+            .pie{
+                order: 4;
+            }
+
+            .steak{
+                order: 5;
+            }
+
+            .chicken{
+                order: 6;
+            }
+
+            .kofta{
+                order: 7;
+            }
+        }
+    }
+
+    section.contact{
+        .container{
+            form{
+                .input-group{
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+
+    section.chefs{
+        .container{
+            .all-cards{
+                .chef-card{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    section.gallery{
+        .gallery-images{
+            height: auto;
+
+            .picture{
+                width: 100%;
+            }
+        }
+    }
+
+    section.contact{
+        .container{
+            .details{
+                .detail{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            .about, .get-in-touch{
+                width: 100%;
+                order: 0;
+            }
+
+            .sub{
+                width: 100%;
+                order: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        padding-inline: 15px;
+    }
+
+    header{
+        .container{
+            .header-content{
+                .header-buttons{
+                    flex-direction: column;
+                    gap: 20px;
+        
+                    .video-btn{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            .sub{
+                .sub-input{
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
